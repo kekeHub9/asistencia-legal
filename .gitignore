@@ -1,0 +1,102 @@
+# ==========================================
+# ARCHIVOS DEL SISTEMA OPERATIVO
+# ==========================================
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ==========================================
+# ENTORNOS VIRTUALES (PYTHON / BACKEND)
+# ==========================================
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# ==========================================
+# PYTHON
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Pytest/
+.pytest_cache/
+.coverage
+htmlcov/
+build/
+dist/
+*.egg-info/
+
+# ==========================================
+# NEXT.JS / NODE.JS (FRONTEND)
+# ==========================================
+node_modules/
+.next/
+out/
+build/
+.DS_Store
+*.pem
+
+# Archivos de entorno de Node
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs de Node y Next.js
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+.next/trace
+
+# ==========================================
+# VARIABLES DE ENTORNO (¡CRÍTICO!)
+# ==========================================
+# ¡NUNCA subas tus claves de Supabase al repositorio!
+.env
+.env.*
+!.env.example
+.env.local
+.env.development
+.env.production
+*.env
+
+# ==========================================
+# EDITORES DE CÓDIGO
+# ==========================================
+# VS Code
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+
+# Antigravity / JetBrains / IntelliJ
+.idea/
+*.iml
+*.ipr
+*.iws
+.qodo/
+
+# ==========================================
+# ARCHIVOS DE LA BASE DE DATOS / SUPABASE
+# ==========================================
+# Archivos temporales o locales de la BD
+*.sqlite
+*.sqlite3
+*.db
+*.dump
+supabase/.branches
+supabase/.temp
+supabase/supabase_schema.sql
+
+# ==========================================
+# ARCHIVOS GENERADOS (TYPESCRIPT)
+# ==========================================
+*.tsbuildinfo
+next-env.d.ts
