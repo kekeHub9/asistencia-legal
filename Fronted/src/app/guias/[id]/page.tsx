@@ -163,10 +163,10 @@ export default async function GuiaDetailPage({ params }: GuiaPageProps) {
         </div>
 
         <div className="space-y-6">
-          {guia.pasos.map((paso) => (
-            <div
-              key={paso.orden || paso.texto || index}
-              className="bg-white rounded-2xl border border-slate-200 p-6 shadow-xs space-y-4 hover:border-blue-200 transition-all"
+          {guia.pasos.map((paso, index) => (
+          <div
+              key={index} // Usamos el index del map, o si tienes un ID único, usa paso.id
+               className="bg-white rounded-2xl border border-slate-200 p-6 shadow-xs space-y-4 hover:border-blue-200 transition-all"
             >
               {/* Encabezado del Paso */}
               <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 pb-3 border-b border-slate-100">
